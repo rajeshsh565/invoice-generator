@@ -71,17 +71,34 @@ const InputInfo = ({ handleFormSubmit }) => {
         <FormRow name="invoiceDetails" labelValue="Invoice Details" />
 
         {/* ................................Reverse Charge Checkbox................................. */}
-        <div className="mb-2 flex items-center gap-2">
-          <label htmlFor="reverseCharge" className="font-bold">
+        <div className="mb-2 flex items-center justify-between gap-2">
+          <div className="font-bold">
             Reverse Charge
-          </label>
-            <div className="rounded-full w-5 h-5 overflow-hidden flex outline outline-[1px] outline-offset-[-1px]">
+          </div>
+            <div className="flex gap-8">
+              <div className="flex items-center gap-1">
           <input
-            type="checkbox"
+            type="radio"
             name="reverseCharge"
-            id="reverseCharge"
-            className="w-5 h-5 border border-white"
+            id="reverseChargeY"
+            value="Yes"
           />
+          <label htmlFor="reverseChargeY" className="font-bold">
+            Yes
+          </label>
+              </div>
+              <div className="flex items-center gap-1">
+          <input
+            type="radio"
+            name="reverseCharge"
+            id="reverseChargeN"
+            value="No"
+            checked
+          />
+          <label htmlFor="reverseChargeN" className="font-bold">
+            No
+          </label>
+              </div>
             </div>
         </div>
 

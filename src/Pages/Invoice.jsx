@@ -297,7 +297,7 @@ const Invoice = ({ formData }) => {
             <h3>Authorized Signatory</h3>
           </div>
         </div>
-        <p>Whether Tax is Payable under Reverse Charge - {formData.reverseCharge==='on' ? 'Yes':'No'}</p>
+        <p>Whether Tax is Payable under Reverse Charge - {formData.reverseCharge}</p>
       </div>
 
       {/* Foot Notes */}
