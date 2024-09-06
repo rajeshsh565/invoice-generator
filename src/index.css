@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.invoice-container h1,h2,h3 {
+    font-weight: 700;
+}
+
+.items-table-header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items-table div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
